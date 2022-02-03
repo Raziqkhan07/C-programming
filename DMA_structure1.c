@@ -20,8 +20,6 @@ int main()
          printf("Array elements are:\n");
          for(i=0; i<n; i++)
          {
-             printf("Enter elements:");
-             scanf("%d",arr[i]);
              printf("%d\t",*(arr+i));
          }
      }

@@ -7,23 +7,17 @@ int main()
 
     printf("Enter total number of elements(1 to 100): ");
     scanf("%d", &j);
-
-    // Allocates the memory for 'j' elements.
     data = (float*) calloc(j, sizeof(float));
     if(data == NULL)
     {
-        printf("Error!!! memory not allocated.");
+        printf("Error!...memory not allocated.");
         return 0;
     }
-
-    // Stores the number entered by the user.
     for(i = 0; i < j; ++i)
     {
         printf("Enter Number %d: ", i + 1);
         scanf("%f", data + i);
     }
-
-    // Loop to store largest number at address data
     for(i = 1; i < j; ++i)
     {
         if(*data < *(data + i))
